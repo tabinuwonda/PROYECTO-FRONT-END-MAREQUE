@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Antonio:wght@100..700&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Prosto+One&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CONTACTO</title>
+  </head>
+
+<body>
+   <div class="top"> 
+    
+    <header  class="container">
+      <img
+            src="./img/LogosinfondoNuwonda.png"
+            width= "auto"
+            height="90px"
+            alt="logo"
+           
+      />
+      <div class="encabezado"> 
+        <h1 class="tituloMarca">Nuwonda Propiedades</h1>
+        <h2 class="subtituloMarca">Encontramos tu lugar en el mundo <strong>, tu hogar</strong></h2>
+      </div>
+        
+      
+     </header>
+
+    <nav>
+      <!-- Botón hamburguesa -->
+      <button class="menu-btn">💜 MENÚ 💜</button>
+
+      <!-- Lista de navegación -->
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#conocenos">Conocenos</a></li>
+        <li>COMPRAR ▾
+          <!-- <a href=""></a> -->
+          <ul class="submenu"> 
+            <li><a href="compraCasas.html">Casas</a></li>
+            <li><a href="compraDepto.html">Departamentos</a></li>
+          </ul>
+        </li>
+        <li>ALQUILAR ▾
+          <!-- <a href="#"></a> -->
+          <ul class="submenu">
+            <li><a href="#">Casas</a></li>
+            <li><a href="#">Departamentos</a></li>
+          </ul>
+        </li>
+        <li>VENDER ▾
+          <!-- <a href="#"></a> -->
+          <ul class="submenu">
+            <li><a href="#">Casas</a></li>
+            <li><a href="#">Departamentos</a></li>
+          </ul>
+        </li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="contacto.html" target="_blank">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>   
+
+
+
+  <section id="contacto"> 
+    <h1>CONTACTANOS</h1>   
+    <form
+      action="https://formsubmit.co/nuwonda.nuwonda@gmail.com"
+      method="post"
+      target="_blank"
+      enctype="multipart/form-data"
+      autocomplete="off"
+      novalidate
+      > <!-- novalidate: evita la validacion automatica del navegador -->
+    
+
+      <fieldset>
+            <legend>DATOS PERSONALES</legend>
+          <div class="datos"> 
+            <div>
+            <label for="nombre">Nombre:</label>
+            <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Escriba su Nombre"
+                value=""
+                required
+            />
+            </div>
+
+            <div>
+            <label for="apellido">Apellido:</label>
+            <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Escriba su Apellido"
+                value=""
+                required
+            />
+            </div>
+
+            <div>
+            <label for="email">Correo:</label>
+            <input type="email" name="correo"  placeholder="Escriba su Email" id="email" required />
+            </div>
+          </div>
+        </fieldset>
+
+      <br />
+
+    <fieldset>
+         <legend>MOTIVO DEL MENSAJE</legend>
+      <div class="mensaje">
+        <div>
+          <!-- Se desglozan opciones-->
+          <label for="opcion">Tema de consulta:</label>
+          <select name="opciones" id="opcion">
+            <option value="1">Tasaciones</option>
+            <option value="2">Quiero vender o alquilar mi casa</option>
+            <option value="3">Busco comprar o alquilar </option>
+          </select>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="consulta">Consulta: </label>
+          <textarea
+            name="consultas"
+            id="consulta"
+            placeholder="Escribe tu consulta aquí..."
+          ></textarea>
+        </div>
+      </div>
+    </fieldset>
+      
+      <br />
+
+      <div class="acepto">
+        <label for="condiciones">Acepto términos y condiciones</label>
+        <input id="acepto2"
+          type="checkbox"
+          name="condiciones"
+          id="condiciones"
+          value="acepto"
+          required
+        />
+      </div>
+
+
+<!-- ESTO NO SE BIEN COMO SERÍA AGREGAR CAMPO OCULTO Y PARA REDIRECCIONAR O MENSAJE DE ÉXITO <input type="hidden" name="_redirect" value="https://tusitio.com/gracias.html"> -->
+      <br />
+
+      <button type="submit">ENVIAR</button>
+    </form>
+
+  </section>  
+<script src="./JS/scrip.js"></script>
+  </body>
+</html>
