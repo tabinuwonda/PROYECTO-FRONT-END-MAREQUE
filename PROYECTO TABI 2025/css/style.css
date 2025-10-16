@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -196,50 +198,88 @@ h4 {
 /* ------------------------MAIN-------------------- */
 
 
-/* ***********SOBRE NOSOTROS**************** */
+/* ***********1ER SECTION **************** */
+
+.banner {
+    background-image: url("../img/banner\ 2.png");
+    height: 382px;
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .image-wrapper-mobi {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+
+.img-background {
+    background-image: url(../img/banner\ 2bb.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+/* ***********2do SECTION SOBRE NOSOTROS**************** */
 
 .grid-conocenos {
   display: grid;
   grid-template-columns: repeat(4, 1fr) ;
-  grid-template-rows: repeat(4, auto);
-  gap: 20px;
-  margin: 20px;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 80px;
+  column-gap: 10px;
+  margin: 50px;
+  align-items: center;
 }
 
 .sobre  {
-  grid-column: 2/4;
-  grid-row: 1/2;
-  text-align: center;
+    grid-column: 1 / 5;     /* ocupa todo el ancho del grid */
+  grid-row: 1 / 2;
+  text-align: center;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centra horizontalmente */
+  justify-content: center;
+  max-width: 800px;        /* 🔹 controla el ancho máximo del texto */
+  margin: 0 auto;          /* 🔹 lo centra dentro del grid */
 }
 
-/* .sobre p {
-  text-align: center;
-  grid-column: 2/4;
-  grid-row: 2/3;
-} */
 
 .porque  {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
+  /*display: grid;
+  grid-template-columns: 1fr 2fr; 
   grid-template-rows: repeat(3, auto); */
   grid-row: 2/3;
+  grid-column: 1/3;
+  text-align: left;
   
-  } */
-.porque h3, .porque p {
-  grid-column: 1/5;
-}
-.porque img {
-  grid-column: 2/3;
-  grid-row: 1/3;
+  } 
+
+.porquefoto {
+  grid-row: 2/3;
+  grid-column: 3/5;  
   width: 100%;
 }
 
-.perfil {
-  grid-row: 4/5;
-  grid-column: 1/5;
+.porquefoto img {
+  width: 100%;       /* 🔹 ocupa todo el ancho del contenedor */
+  height: auto;      /* mantiene la proporción */
+  border-radius: 15px;
+  display: block;    /* elimina espacios extra si era inline */
 }
 
+.perfil {
+  grid-row: 3/4;
+  grid-column: 2/5;
+}
 
+.perfilvideo {
+  grid-row: 3/4;  
+  grid-column: 1/2;
+}
 
 
 
