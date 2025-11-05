@@ -477,10 +477,24 @@ fieldset input, select {
 
   }
 
-#acepto2 {
-  width: 10%;
-  
+  .mensaje-exito {
+  display: none;
+  color: #0f8b2c;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  background-color: #e6fbe6;
+  border: 2px solid #8cd98c;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
 /* 🌈 Efecto de enfoque en inputs, selects y textarea */
 #contacto input:focus,
 #contacto select:focus,

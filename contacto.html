@@ -70,18 +70,19 @@
     </nav>
   </div>   
 
-
+<!-- -------------*******FORMULARIO*****------------------------ -->
 
   <section id="contacto"> 
     <h1>CONTACTANOS</h1>   
     <form
+      id="contactForm"
       action="https://formsubmit.co/nuwonda.nuwonda@gmail.com"
       method="post"
       target="_blank"
       enctype="multipart/form-data"
       autocomplete="off"
-      novalidate
-      > <!-- novalidate: evita la validacion automatica del navegador -->
+      
+      > <!-- novalidate: evita la validacion automatica del navegador Q LO SAQUE-->
     
 
       <fieldset>
@@ -113,7 +114,7 @@
 
             <div>
             <label for="email" id="labelEmail" >Correo: </label>
-            <input type="email" name="correo"  placeholder="Escriba su Email" id="email" required />
+            <input type="email" name="correo"  placeholder="Escriba su Email" id="email" value="" required />
             </div>
           </div>
         </fieldset>
@@ -126,10 +127,10 @@
         <div>
           <!-- Se desglozan opciones-->
           <label for="opcion">Tema de consulta:</label>
-          <select name="opciones" id="opcion">
-            <option value="1">Tasaciones</option>
-            <option value="2">Quiero vender o alquilar mi casa</option>
-            <option value="3">Busco comprar o alquilar </option>
+          <select name="temaConsulta" id="opcion">
+            <option value="Tasaciones">Tasaciones</option>
+            <option value="Vender o alquilar mi casa">Quiero vender o alquilar mi casa</option>
+            <option value="Comprar o alquilar">Busco comprar o alquilar</option>
           </select>
         </div>
 
@@ -150,7 +151,7 @@
 
       <div class="acepto">
         <label for="condiciones">Acepto términos y condiciones</label>
-        <input id="acepto2"
+        <input 
           type="checkbox"
           name="condiciones"
           id="condiciones"
@@ -162,11 +163,16 @@
 
 <!-- ESTO NO SE BIEN COMO SERÍA AGREGAR CAMPO OCULTO Y PARA REDIRECCIONAR O MENSAJE DE ÉXITO <input type="hidden" name="_redirect" value="https://tusitio.com/gracias.html"> -->
       <br />
-
+ <!-- 🔹Campos ocultos de configuración de FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <br>
       <button type="submit">ENVIAR</button>
     </form>
-
+ <!-- 🔹Mensaje oculto que se mostrará después del envío -->
+    <p id="mensaje-exito" class="mensaje-exito">✅ Consulta enviada exitosamente.</p>
   </section>  
+
+  <!-- ---------------FINAL FORMULARIO----------------------- -->
 
       <footer>
       <div class="foot">
